@@ -1,5 +1,6 @@
 const express = require("express");
 const { getDb } = require("./db");
+const Score = require("./schema");
 
 const router = express.Router();
 
@@ -10,9 +11,14 @@ router.get("/", async (req, res) => {
 router.post("/submit-quiz", async (req, res) => {
   const { gender, score } = req.body;
   try {
-    const db = getDb();
-    const collection = db.collection("scores");
-    await collection.insertOne({ gender, score });
+    //const db = getDb();
+    //const collection = db.collection("scores");
+    //await collection.insertOne({ gender, score });
+    
+    //using schema
+    const newQuiz = await Score.create({
+      gender, score
+    })
     console.log("Data inserted into MongoDB:", { gender, score });
     res.send("Quiz results submitted successfully");
   } catch (err) {
@@ -24,8 +30,8 @@ router.post("/submit-quiz", async (req, res) => {
 router.get("/get-scores", async (req, res) => {
   const { gender } = req.query;
   try {
-    const db = getDb();
-    const collection = db.collection("scores");
+    //const db = getDb();
+    //const collection = db.collection("scores");
 
     console.log("Gender filter:", gender);
 
@@ -35,7 +41,7 @@ router.get("/get-scores", async (req, res) => {
 
     console.log("Query object:", query);
 
-    const scores = await collection.find(query).toArray();
+    const scores = await Score.find(query).toArray();
 
     console.log("Fetched scores:", scores);
 
