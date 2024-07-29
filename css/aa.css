@@ -1,0 +1,74 @@
+.card {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Adjust the height as needed */
+    position: relative;
+    transition: height 0.5s ease-in-out; /* Add transition for smoother animation */
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:contain; /* Maintain aspect ratio and fill the container */
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0944a1;
+    color: #fff;
+}
+
+.buttons button:hover {
+    background-color: #073e97;
+}
+   <script>
+        // JavaScript code to handle image slide functionality
+        const images = [
+            './questionImage/aa.jpg',
+            './questionImage/bg.jpg',
+            './questionImage/fa.jpg'
+        ];
+        let currentIndex = 0;
+        const cardImage = document.getElementById('cardImage');
+
+        function showImage(index, direction) {
+            cardImage.style.opacity = 0;
+            setTimeout(() => {
+                cardImage.src = images[index];
+                cardImage.style.transform = `translateX(${direction === 'next' ? '-' : ''}100%)`;
+                void cardImage.offsetWidth; // Trigger reflow to ensure smooth animation
+                cardImage.style.opacity = 1;
+                cardImage.style.transform = 'translateX(0)';
+                currentIndex = index;
+            }, 500);
+        }
+
+        function showNextImage() {
+            const nextIndex = (currentIndex + 1) % images.length;
+            showImage(nextIndex, 'next');
+        }
+
+        function showPrevImage() {
+            const prevIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(prevIndex, 'prev');
+        }
+
+        showImage(currentIndex, 'next');
+
+        document.getElementById('prevBtn').addEventListener('click', showPrevImage);
+        document.getElementById('nextBtn').addEventListener('click', showNextImage);
+    </script>

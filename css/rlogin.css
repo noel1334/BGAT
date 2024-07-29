@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #001e4d;
+}
+.container{
+	max-width: 800px;
+	margin:auto;
+}
+.header{
+	position: absolute;
+	width: 100%;
+	left:0;
+	top:0;
+	z-index: 99;
+	padding: 5px 0;
+	background-color: whitesmoke;
+}
+.header-main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	border-radius: 4px;
+    max-width: 800px;
+}
+
+.header .logo a{
+	font-size: 22px;
+	text-transform: capitalize;
+	color: #073e97;
+	font-weight: 600;
+    text-decoration: none;
+}
+.login-container{
+    background: #fff;
+    /* width: 90%; */
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px 60px;
+}
+.login-container h1{
+    font-size: 20px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.login-container #loginForm{
+    padding: 10px 0;
+    margin-top: 0 10px;
+}
+.login-container #loginForm input{
+    width: 100%;
+    margin: 3px 0;
+    border: none;
+    border-bottom: 1px solid #948f8f;
+    outline: none;
+    padding: 5px 0;
+}
+.login-container #loginForm button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    background: #001e4d;
+}
+.errorMessage{
+    text-align: center;
+    color: red;
+}
+
+@media(max-width: 767px){
+    html{
+        font-size: 14px;
+    }
+    .header-main{
+        margin: 10px;
+        padding: 10px;
+    }
+	.header-main .logo a{
+		font-size: 18px;
+	}
+    .login-container h1{
+        font-size: 16px;
+    }
+    .login-container{
+        margin: 100px 20px;
+        padding: 10px;
+    }
+}

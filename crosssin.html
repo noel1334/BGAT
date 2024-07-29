@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Crossing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <h1>Genetic Crossing Simulator</h1>
+            <div class="inputs">
+                <div class="inputParent">
+                    <label for="parent1">
+                        <input type="text" id="parent1" maxlength="2" placeholder="e.g., Yy">
+                    </label>
+                    <label for="parent2">
+                        <input type="text" id="parent2" maxlength="2" placeholder="e.g., Yy">
+                    </label>
+                </div>
+                <button onclick="showCrossing()">Show Crossing</button>
+            </div>
+            <div id="parentGenotypes" class="parentGenotypes"></div>
+            <div class="crossing" id="crossing"></div>
+            <div class="offspring" id="offspring"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

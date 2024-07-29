@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #001e4d;
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 650px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quizz{
+    padding: 20px 0;
+}
+.quizz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.quizz img{
+    width:fit-content;
+    height: 300px;
+    object-fit: contain;
+    margin: 10px 0;
+    padding: 10px;
+}
+.btn{
+    background: #fff;
+    color:#222;
+    font-weight: 400;
+    width: 100%;
+    border: 1px solid #747474;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover:not([disabled]){
+    color: #fff;
+    background-color: #222;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+} 
+#logoutBtn{
+    background: #cc2c04;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+} 
+.correct{
+    color: #fff;
+    background: #2be28d;
+}
+.incorrect{
+    color: #fff;
+    background: #e60d0d;
+}
+
+/* Add to your existing CSS */
+#gender-selection {
+    text-align: center;
+    padding: 20px;
+}
+
+#gender-selection h2 {
+    font-size: 20px;
+    color: #001e4d;
+    margin-bottom: 10px;
+}
+
+#gender-selection label {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #001e4d;
+}
+
+#start-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.errorMessage{
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: center;
+    color: red;
+}

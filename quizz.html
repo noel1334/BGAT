@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGAT</title>
+    <link rel="stylesheet" href="./css/quizz.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Biology Genetics Achievement Test </h1>
+        <div id="gender-selection">
+            <h2>Select Your Gender</h2>
+            <label for="gender-male">
+                <input type="radio" id="gender-male" name="gender" value="Male">
+                Male
+            </label>
+            <label for="gender-female">
+                <input type="radio" id="gender-female" name="gender" value="Female">
+                Female
+            </label>
+            <button id="start-btn">Start Quiz</button>
+            <p class="errorMessage"></p>
+        </div>
+
+        <div class="quizz" style="display:none;">
+            <h2 id="question">No question found</h2>
+            <div id="answers-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    <script src="./js/quizz.js"></script>
+</body>
+
+</html>

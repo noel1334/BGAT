@@ -1,0 +1,130 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  /* text-align: center; */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  #001e4daf;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputParent {
+ display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.inputs label {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.inputs input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.inputs input:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+ background-color: #77d47cc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #77d47cc0;
+}
+
+.crossing, .offspring {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  
+}
+.offspring {
+background-color: #5f9ed8;
+width: 50%;
+margin: 0 auto;
+display: flex;
+gap: 5px;
+justify-content: space-around;
+}
+
+.offspring .child {
+  background-color: #f9f9f9;
+  border: 1px solid #4d85ce;
+  color:  #4d85ce;
+  padding: 10px;
+  /* margin: 5px; */
+  font-size: 18px;
+  border-radius: 5px;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.arrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #77d47cc0;
+  margin: 10px;
+}
+
+.parentGenotypes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin:auto;
+  width: 30%;
+  gap: 10px;
+  
+}
+
+.parent {
+  /* margin: 0 10px; */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #5f9ed8;
+  color: #ffffff;
+  padding: 5px 20px;
+  border: #f0f0f0 solid 1px;
+}

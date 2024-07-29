@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="css/scores.css">
+</head>
+
+<body>
+    <div class="score-container">
+        <div class="score">
+            <h1>Respondent scores</h1>
+            <div class="filter-container">
+                <div class="checkbox-container">
+                    <label><input type="radio" name="gender-filter" value="" checked> All</label>
+                    <label><input type="radio" name="gender-filter" value="male"> Male</label>
+                    <label><input type="radio" name="gender-filter" value="female"> Female</label>
+                </div>
+                <div class="sort-container">
+                    <label for="sort-scores">Sort by: </label>
+                    <select id="sort-scores">
+                        <option value="none">Score</option>
+                        <option value="highest">Highest Score</option>
+                        <option value="lowest">Lowest Score</option>
+                    </select>
+                </div>
+            </div>
+            <div id="scores"></div>
+            <button id="print-button">Print</button>
+        </div>
+    </div>
+    <script src="./js/score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+[
+  {
+    "question": "____is a unit of heredity?",
+    "answers": [
+      { "text": "alleles ", "correct": false },
+      { "text": "gene", "correct": true },
+      { "text": "homozygous", "correct": false }
+    ]
+  },
+  {
+    "question": " Genes are located on the?",
+    "answers": [
+      { "text": "chromosomes  ", "correct": true },
+      { "text": "liver", "correct": false },
+      { "text": "heredity", "correct": false }
+    ]
+  },
+  {
+    "question": " ____ is composed of DNA?",
+    "answers": [
+      { "text": "man", "correct": false },
+      { "text": "chromosome", "correct": false },
+      { "text": "gene", "correct": true }
+    ]
+  },
+  {
+    "question": "____ Is an offspring formed from the crossing of parents that are genetically different but of the same species?",
+    "answers": [
+      { "text": "alleles ", "correct": false },
+      { "text": "genes ", "correct": false },
+      { "text": "hybrid", "correct": true }
+    ]
+  },
+  {
+    "question": "____are features possessed by an organism? ",
+    "answers": [
+      { "text": "traits ", "correct": true },
+      { "text": "locust ", "correct": false },
+      { "text": "hybrid", "correct": false }
+    ]
+  },
+  {
+    "question": "____can be transferred from parents to offspring?",
+    "answers": [
+      { "text": "brain ", "correct": false },
+      { "text": "traits ", "correct": true },
+      { "text": "crossing", "correct": false }
+    ]
+  },
+  {
+    "question": "Genes are referred to as___ ?",
+    "answers": [
+      { "text": "homozygous materials ", "correct": false },
+      { "text": "recessive ", "correct": false },
+      { "text": "genetic material", "correct": true }
+    ]
+  },
+  {
+    "question": "____occurs between organisms of the same species?",
+    "answers": [
+      { "text": "enjoyment", "correct": false },
+      { "text": "mating", "correct": true },
+      { "text": "freezing", "correct": false}
+    ]
+  },
+  {
+    "question": "____is a process in which parents passes certain genes to their children?",
+    "answers": [
+      { "text": "heredity ", "correct": true },
+      { "text": "heterozygous", "correct": false },
+      { "text": "genetic", "correct": false }
+    ]
+  },
+  {
+    "question": "____ is referred to the genetic makeup of an organism ?",
+    "answers": [
+      { "text": "phenotype", "correct": false },
+      { "text": "genotype ", "correct": true },
+      { "text": "hybrid", "correct": false }
+    ]
+  },
+  {
+    "question": "____ is referred to as observable traits?",
+    "answers": [
+      { "text": "phenotype", "correct": true },
+      { "text": "genotype ", "correct": false },
+      { "text": "traits", "correct": false }
+    ]
+  },
+  {
+    "question": "Heterozygous gene is represented as ?",
+    "answers": [
+      { "text": "YY", "correct": false },
+      { "text": "aa", "correct": false },
+      { "text": "Aa", "correct": true }
+    ]
+  },
+  {
+    "question": "Homozygous gene is represented as?",
+    "answers": [
+      { "text": "AA", "correct": true },
+      { "text": "Aa", "correct": false },
+      { "text": "Yy", "correct": false }
+    ]
+  },
+
+  {
+    "question": "The phenotypic ratio of the first filial generation after  crossing Yy  X  Yy is?",
+    "image": "../questionImage/gene.png",
+    "answers": [
+      { "text": "4:1", "correct": false },
+      { "text": "3:1", "correct": true },
+      { "text": "1:2:1", "correct": false }
+    ]
+  },
+  {
+    "question": "The genotypic ratio of the first filial generation after crossing Yy  X  Yy  is?",
+    "image": "../questionImage/q1.jpg",
+    "answers": [
+      { "text": "3:1", "correct": false },
+      { "text": "1:2:1", "correct": true },
+      { "text": "4:1", "correct": false }
+    ]
+  },
+  {
+    "question": "During crossing we must always indicate crosses using letter ____ as seen above ?",
+    "answers": [
+      { "text": "K", "correct": false },
+      { "text": "X", "correct": true },
+      { "text": "T", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be the value of your phenotypic and genotypic ratio after crossing AA x aa as shown below?",
+    "image": "../questionImage/q2.jpg",
+    "answers": [
+      { "text": "2:0 ", "correct": false },
+      { "text": "4:0", "correct": true },
+      { "text": "4:1", "correct": false }
+    ]
+  },
+  {
+    "question": "The below diagram shows the crossing is ____?",
+    "image": "../questionImage/q3.jpg",
+    "answers": [
+      { "text": "homozygous crossing", "correct": false },
+      { "text": "heterozygous crossing", "correct": false },
+      { "text": "both a & b crossing ", "correct": true }
+    ]
+  },
+  {
+    "question": "A cross between homozygous and heterozygous gene will result to____?",
+    "answers": [
+      { "text": "AA, AA, Aa, Aa", "correct": true },
+      { "text": "aa, AA, Aa, aA ", "correct": false },
+      { "text": "aa, AA, AB, bb", "correct": false }
+    ]
+  },
+  {
+    "question": "An “X” is used to indicate that two individuals have been_______together?",
+    "answers": [
+      { "text": "mated", "correct": true },
+      { "text": "jam", "correct": false },
+      { "text": "slap", "correct": false }
+    ]
+  },
+  {
+    "question": "In genetics, according to the diagram above, during crossing 'P' means?",
+    "answers": [
+      { "text": "wife", "correct": false },
+      { "text": "mother's", "correct": false },
+      { "text": "parental", "correct": true }
+    ]
+  },
+    {
+    "question": "In genetics, as seen below during crossing 'F' means?",
+    "answers": [
+      { "text": "filial", "correct": true },
+      { "text": "mother's", "correct": false },
+      { "text": "parental", "correct": false}
+    ]
+  },
+   {
+    "question": "T stands for _______ in DNA molecule?",
+    "image": "../questionImage/q4.jpg",
+    "answers": [
+      { "text": "Timing ", "correct": false },
+      { "text": "Thymine ", "correct": true },
+      { "text": "Thymes", "correct": false}
+    ]
+  },
+   {
+    "question": "G stands for_____ in DNA molecule? ",
+    "image": "../questionImage/q4.jpg",
+    "answers": [
+      { "text": "Guanine", "correct": true },
+      { "text": "Gaunt", "correct": false},
+      { "text": "Game ", "correct": false}
+    ]
+  },
+   {
+    "question": "All these are part of DNA molecule except?  ",
+    "image": "../questionImage/q4.jpg",
+    "answers": [
+      { "text": "Cytosine and nitrogen base ", "correct": false },
+      { "text": "Adenine ", "correct": false},
+      { "text": "none of the above  ", "correct": true}
+    ]
+  }
+]
