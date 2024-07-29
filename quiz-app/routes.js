@@ -3,6 +3,10 @@ const { getDb } = require("./db");
 
 const router = express.Router();
 
+router.get("/", async (req, res) => {
+  res.send("Hello from server");
+});
+
 router.post("/submit-quiz", async (req, res) => {
   const { gender, score } = req.body;
   try {
