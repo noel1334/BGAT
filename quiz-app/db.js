@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb");
 
 //const mongoUrl = "mongodb://localhost:27017";
-const mongoUrl = "mongodb://localhost:27017";
+const mongoUrl = "mongodb+srv://BGAT:HwIc0dX2Uce8fH07@bgat.n6x5vv0.mongodb.net/?retryWrites=true&w=majority&appName=BGAT";
 
 const client = new MongoClient(mongoUrl, { useUnifiedTopology: true });
 
