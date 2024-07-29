@@ -41,7 +41,7 @@ router.get("/get-scores", async (req, res) => {
 
     console.log("Query object:", query);
 
-    const scores = await Score.find(query).toArray();
+    const scores = await Score.find(query);
 
     console.log("Fetched scores:", scores);
 
