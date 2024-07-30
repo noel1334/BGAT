@@ -119,16 +119,25 @@ document.getElementById("logoutBtn").addEventListener("click", function() {
 });
 
 function submitQuizResults() {
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:3306/submit-quiz", true);
-  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      console.log(xhr.responseText);
-    }
-  };
-  const data = JSON.stringify({ gender: gender, score: score });
-  xhr.send(data);
+  try {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:3306/submit-quiz", true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 201) {
+          console.log("Quiz results submitted successfully:", xhr.responseText);
+        } else {
+          console.error("Failed to submit quiz results:", xhr.responseText);
+        }
+      }
+    };
+    const data = JSON.stringify({ gender: gender, score: score });
+    console.log("DATA", data);
+    xhr.send(data);
+  } catch (error) {
+    console.log("Error from submit quiz", error);
+  }
 }
 
 function showScore() {
@@ -138,5 +147,6 @@ function showScore() {
   nextButton.style.display = "block";
 
   // Submit the quiz results to the server
+  console.log("Submitting quiz results...");
   submitQuizResults();
 }

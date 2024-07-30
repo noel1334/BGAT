@@ -1,16 +1,16 @@
-const { MongoClient } = require("mongodb");
+const mongoose = require("mongoose");
 
-//const mongoUrl = "mongodb://localhost:27017";
-const mongoUrl = "mongodb+srv://BGAT:HwIc0dX2Uce8fH07@bgat.n6x5vv0.mongodb.net/?retryWrites=true&w=majority&appName=BGAT";
-
-const client = new MongoClient(mongoUrl, { useUnifiedTopology: true });
-
-let db;
+const mongoUrl =
+  "mongodb+srv://BGAT:HwIc0dX2Uce8fH07@bgat.n6x5vv0.mongodb.net/BGAT?retryWrites=true&w=majority";
 
 async function connectToDatabase() {
   try {
-    await client.connect();
-    db = client.db("BGAT");
+    await mongoose.connect(mongoUrl, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 20000, // Increase timeout to 20 seconds
+      socketTimeoutMS: 45000 // Increase socket timeout to 45 seconds
+    });
     console.log("Connected to MongoDB database");
   } catch (err) {
     console.error("Failed to connect to MongoDB", err);
@@ -18,11 +18,4 @@ async function connectToDatabase() {
   }
 }
 
-function getDb() {
-  if (!db) {
-    throw new Error("Database not connected. Call connectToDatabase first.");
-  }
-  return db;
-}
-
-module.exports = { connectToDatabase, getDb };
+module.exports = { connectToDatabase };

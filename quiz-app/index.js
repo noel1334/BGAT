@@ -9,8 +9,8 @@ const port = 3306;
 
 // CORS configuration
 const corsOptions = {
-  //origin: "http://127.0.0.1:5500",
-  origin: "https://bgat.onrender.com",
+  origin: "http://127.0.0.1:5500",
+  //origin: "https://bgat.onrender.com",
   methods: "GET, POST, PUT, DELETE",
   allowedHeaders: "Content-Type, Authorization"
 };
