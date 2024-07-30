@@ -121,7 +121,9 @@ document.getElementById("logoutBtn").addEventListener("click", function() {
 function submitQuizResults() {
   try {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:3306/submit-quiz", true);
+    //xhr.open("POST", "http://localhost:3306/submit-quiz", true);
+    xhr.open("POST", "https://bgat-server.onrender.com/submit-quiz", true);
+
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {

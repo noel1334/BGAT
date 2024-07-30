@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const fetchScores = (gender = null, sortOrder = "none") => {
-    let url = "http://localhost:5000/get-scores";
-    //let url = "https://bgat-server.onrender.com/get-scores";
+    //let url = "http://localhost:3306/get-scores";
+    let url = "https://bgat-server.onrender.com/get-scores";
     if (gender) {
       url += `?gender=${gender}`;
     }
