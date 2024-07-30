@@ -143,6 +143,7 @@ l .ic {
     border: none;
     cursor: pointer;
     padding: 10px;
+    z-index: 80;
 }
 
 .prev {

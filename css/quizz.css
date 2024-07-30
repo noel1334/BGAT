@@ -121,3 +121,9 @@ body{
     text-align: center;
     color: red;
 }
+
+@media screen and (max-width: 678px) {
+    .quizz img{
+        width: 100%;
+    }
+}
