@@ -14,7 +14,7 @@ setInterval(() => {
   } catch (error) {
     console.error('Error in try block:', error);
   }
-}, 120000); // 120000 milliseconds = 2 minutes
+}, 60000); // 60000 milliseconds = 1 minutes
 
 
 document.addEventListener("DOMContentLoaded", function () {
