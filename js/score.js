@@ -1,4 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+setInterval(() => {
+  try {
+    let url = "https://bgat-server.onrender.com/get-scores";
+    console.log('SENDING REQ')
+    fetch(url, {})
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  } catch (error) {
+    console.error('Error in try block:', error);
+  }
+}, 120000); // 120000 milliseconds = 2 minutes
+
+
+document.addEventListener("DOMContentLoaded", function () {
   const fetchScores = (gender = null, sortOrder = "none") => {
     //let url = "http://localhost:3306/get-scores";
     let url = "https://bgat-server.onrender.com/get-scores";
