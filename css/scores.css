@@ -93,3 +93,10 @@ tr:hover {
     background-color: #3e8e41;
     transform: translateY(2px);
 }
+
+#statistics {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
