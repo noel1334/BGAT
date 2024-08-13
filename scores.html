@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="css/scores.css">
 </head>
 
-<body>
-    <div class="score-container">
-        <div class="score">
-            <h1>Respondent Scores</h1>
-            <div class="filter-container">
-                <div class="checkbox-container">
-                    <label><input type="radio" name="gender-filter" value="" checked> All</label>
-                    <label><input type="radio" name="gender-filter" value="male"> Male</label>
-                    <label><input type="radio" name="gender-filter" value="female"> Female</label>
-                </div>
-                <div class="sort-container">
-                    <label for="sort-scores">Sort by: </label>
-                    <select id="sort-scores">
-                        <option value="none">Score</option>
-                        <option value="highest">Highest Score</option>
-                        <option value="lowest">Lowest Score</option>
-                    </select>
-                </div>
-            </div>
-            <div id="scores"></div>
-            <button id="print-button">Print</button>
-        </div>
-        <div id="statistics"></div>
+<div class="filter-container">
+    <div class="checkbox-container">
+        <label><input type="radio" name="gender-filter" value="" checked> All</label>
+        <label><input type="radio" name="gender-filter" value="male"> Male</label>
+        <label><input type="radio" name="gender-filter" value="female"> Female</label>
     </div>
-    <script src="./js/score.js"></script>
+    <div class="sort-container">
+        <label for="sort-scores">Sort by: </label>
+        <select id="sort-scores">
+            <option value="none">Score</option>
+            <option value="highest">Highest Score</option>
+            <option value="lowest">Lowest Score</option>
+        </select>
+    </div>
+</div><br>
+<div class="score-container">
+    <div class="score">
+        <h1>Experimental group students scores.</h1>
+
+        <div id="scores"></div>
+        <button id="print-button">Print</button>
+        <div class="score-container">
+            <div id="statistics"></div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+</div>
+<script src="./js/score.js"></script>
 </body>
 
 </html>
